@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
 export class HomePageComponent implements OnInit {
 
   digits: string[] = ['', '', '', ''];
-  //numbers: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   code: any;
   inputCode: any;
