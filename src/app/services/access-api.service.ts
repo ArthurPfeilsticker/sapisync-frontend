@@ -7,9 +7,9 @@ import { Observable } from 'rxjs';
 })
 export class AccessApiService {
   //develop
-  //private baseUrl = 'http://localhost:3000';
+  private baseUrl = 'http://localhost:3000';
   //produção
-  private baseUrl = 'https://sapisync-backend.cyclic.app';
+  //private baseUrl = 'https://sapisync-backend.cyclic.app';
 
   constructor(
     private http: HttpClient
