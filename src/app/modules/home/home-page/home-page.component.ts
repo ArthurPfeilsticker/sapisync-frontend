@@ -11,7 +11,6 @@ export class HomePageComponent implements OnInit {
   digits: string[] = ['', '', '', ''];
 
   code: any;
-  inputCode: any;
 
   constructor(private router: Router) { }
 
