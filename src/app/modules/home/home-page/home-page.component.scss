@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 .main-page-div{
     display: flex;
     flex-direction: column;
@@ -8,8 +10,7 @@
 
     h1{
         font-size: 50px;
-        font-family: 'Orbitron';
-        src: url('/src/assets/fonts/Orbitron/Orbitron-VariableFont_wght.ttf') format('truetype');
+        font-family: 'Orbitron', sans-serif;
         color: #39FF14;
     }
     
@@ -30,7 +31,7 @@
             justify-content: center;
             font-size: 40px;
             color: #39FF14;
-            font-family: 'Orbitron';
+            font-family: 'Orbitron', sans-serif;
         }
     }
     .error{
@@ -47,7 +48,7 @@
             justify-content: center;
             color: red;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            font-family: 'Orbitron';
+            font-family: 'Orbitron', sans-serif;
             font-size: 20px;
         }
     }
@@ -72,7 +73,7 @@
                 font-size: 40px;
                 background-color: #000000;
                 color: #39FF14;
-                font-family: 'Orbitron';
+                font-family: 'Orbitron', sans-serif;
             }
         }
     }
