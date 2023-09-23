@@ -1,0 +1,49 @@
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Juice ITC';
+    src: url('/src/assets/fonts/juice-itc.otf') format('truetype');
+    font-weight: bold;
+    font-size: 40px;
+}
+.main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .user-div{
+        cursor: pointer;
+        width: 500px;
+        margin: 5px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #000;
+        border-radius: 15px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+
+        .char-player-names{
+            margin-left: 20px;
+            h2{
+                text-align: left;
+                font-size: 18px;
+                color: #46230A;
+            }
+            h3{
+                text-align: left;
+                font-size: 16px;
+                color: #88E07D;
+            }
+        }
+        .race-class-div{
+            margin-right: 20px;
+            p{
+                text-align: right;
+                font-size: 14px;
+                color: #808080;
+            }
+        }
+    }
+}

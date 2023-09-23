@@ -1,0 +1,15 @@
+<h1>
+    Char List:
+</h1>
+<div class="main-div">
+    <div class="user-div" *ngFor="let user of users" (click)="goToInfo(user.id)">
+        <div class="char-player-names">
+            <h2 class="char-name">{{ user.charName }}</h2>
+            <h3 class="player-name">{{ user.playerName }}</h3>
+        </div>
+        <div class="race-class-div">
+            <p class="char-race">{{ user.charRace }}</p>
+            <p class="char-class">{{ user.charClass }}</p>
+        </div>
+    </div>
+</div>

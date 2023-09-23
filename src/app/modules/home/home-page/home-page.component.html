@@ -1,0 +1,37 @@
+<div class="main-page-div">
+    <h1>
+        Digite o id de sua ficha
+    </h1>
+
+    <div class="display">
+        <div *ngFor="let digit of digits" class="square">{{ digit }}</div>
+    </div>
+    <div class="buttons">
+        <div class="row-div">
+            <button (click)="addDigit(7)">7</button>
+            <button (click)="addDigit(8)">8</button>
+            <button (click)="addDigit(9)">9</button>
+        </div>
+        <div class="row-div">
+            <button (click)="addDigit(4)">4</button>
+            <button (click)="addDigit(5)">5</button>
+            <button (click)="addDigit(6)">6</button>
+        </div>
+        <div class="row-div">
+            <button (click)="addDigit(1)">1</button>
+            <button (click)="addDigit(2)">2</button>
+            <button (click)="addDigit(3)">3</button>
+        </div>
+        <div class="row-div">
+            <button (click)="deleteLastDigit()" class="btn btn-outline-secondary">
+                <i class="bi bi-backspace"></i>
+            </button>
+            <button (click)="addDigit(0)">0</button>
+            <button (click)="setCode()">
+                <i class="bi bi-arrow-return-right"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+
