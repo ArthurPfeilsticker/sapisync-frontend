@@ -9,6 +9,8 @@
         font-family: 'Juice ITC';
         src: url('/src/assets/fonts/juice-itc.otf') format('truetype');
         font-weight: bold;
+        color: #39FF14;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         font-size: 60px;
     }
 }
@@ -26,6 +28,8 @@
         flex: 1;
         max-width: 400px;
         h3, p{
+            color: #FFF;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
             width: 400px;
             text-align: left;
         }
@@ -38,6 +42,8 @@
         flex: 1;
         max-width: 400px;
         h3, p{
+            color: #FFF;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
             width: 400px;
             text-align: center;
         }
@@ -50,6 +56,8 @@
         flex: 1;
         max-width: 400px;
         h3, p{
+            color: #FFF;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
             width: 400px;
             text-align: right;
         }

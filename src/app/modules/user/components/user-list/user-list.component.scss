@@ -4,6 +4,8 @@ h1{
     align-items: center;
     font-family: 'Juice ITC';
     src: url('/src/assets/fonts/juice-itc.otf') format('truetype');
+    color: #FFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     font-weight: bold;
     font-size: 40px;
 }
@@ -20,7 +22,7 @@ h1{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        border: 1px solid #000;
+        border: 1px solid #88E07D;
         border-radius: 15px;
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 
@@ -29,20 +31,22 @@ h1{
             h2{
                 text-align: left;
                 font-size: 18px;
-                color: #46230A;
+                color: #FFF;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
             }
             h3{
                 text-align: left;
-                font-size: 16px;
-                color: #88E07D;
+                font-size: 18px;
+                color: #39FF14;
             }
         }
         .race-class-div{
             margin-right: 20px;
             p{
                 text-align: right;
-                font-size: 14px;
-                color: #808080;
+                font-size: 18px;
+                color: #FFF;
+                text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
             }
         }
     }

@@ -1,6 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap-icons/font/bootstrap-icons.css';
 
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/images/forest.jpg');
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Isso fará com que a imagem de fundo fique fixa ao rolar a página */
+    height: 100vh; /* Define a altura do body para a altura total da janela do navegador */
+    overflow: hidden; /* Evita rolagem */
+}
 .main-font {
     font-family: 'NsimSun';
     src: url('/src/assets/fonts/SIMSUN.ttf') format('truetype');
