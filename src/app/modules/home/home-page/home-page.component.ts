@@ -11,6 +11,7 @@ export class HomePageComponent implements OnInit {
   digits: string[] = ['', '', '', ''];
 
   code: any;
+  errorMessage: string | null = null;
 
   constructor(private router: Router) { }
 
@@ -35,13 +36,17 @@ export class HomePageComponent implements OnInit {
 
   setCode() {
     const number = parseInt(this.digits.join(''), 10);
-    this.code = +number;
-    this.navigateToUserInfo();
+    if(number != 0){
+      this.code = +number;
+      this.navigateToUserInfo();
+    }else{
+      this.errorMessage = 'Digite um id válido';
+      throw new Error(this.errorMessage);
+    }
   }
 
   navigateToUserInfo(){
     this.router.navigate(['/user-page', this.code]);
   }
-
 
 }

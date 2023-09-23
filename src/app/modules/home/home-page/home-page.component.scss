@@ -27,8 +27,22 @@
             align-items: center;
             justify-content: center;
             font-size: 40px;
-            //background-color: #000000;
             color: #39FF14;
+            font-family: 'Orbitron';
+        }
+    }
+    .error{
+        display: flex;
+        align-items: center;
+        i{
+            font-size: 18px;
+            color: red;
+            margin-right: 5px;
+        }
+        p{
+            align-items: center;
+            justify-content: center;
+            color: red;
             font-family: 'Orbitron';
         }
     }
@@ -55,6 +69,5 @@
                 font-family: 'Orbitron';
             }
         }
-    
     }
 }

@@ -6,6 +6,12 @@
     <div class="display">
         <div *ngFor="let digit of digits" class="square">{{ digit }}</div>
     </div>
+    <div class="error" *ngIf="errorMessage">
+        <i class="bi bi-x-square-fill"></i>
+        <p>
+            {{errorMessage}}
+        </p>
+    </div>
     <div class="buttons">
         <div class="row-div">
             <button (click)="addDigit(7)">7</button>
