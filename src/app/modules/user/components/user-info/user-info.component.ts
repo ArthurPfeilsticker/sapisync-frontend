@@ -9,7 +9,7 @@ import { AccessApiService } from 'src/app/services/access-api.service';
 export class UserInfoComponent implements OnInit {
 
   @Input() code: string = '';
-  users: any;
+  user: any;
 
   constructor(
     private apiService: AccessApiService
@@ -17,7 +17,7 @@ export class UserInfoComponent implements OnInit {
 
   ngOnInit(): void {
     this.apiService.getOneUser(+this.code).subscribe(data => {
-      this.users = data;
+      this.user = data;
     });
   }
 
