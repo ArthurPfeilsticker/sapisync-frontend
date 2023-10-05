@@ -18,6 +18,7 @@ export class UserInfoComponent implements OnInit {
   ngOnInit(): void {
     this.apiService.getOneUser(+this.code).subscribe(data => {
       this.user = data;
+      console.log(data);
     });
   }
 

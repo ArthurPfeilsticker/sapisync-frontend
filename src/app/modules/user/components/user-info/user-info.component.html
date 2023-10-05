@@ -8,24 +8,147 @@
         <h3>
             {{ user.charName }}
         </h3>
+        <h3>
+            {{ user.charRace }}
+        </h3>
+        <h3>
+            {{ user.currentCharHp }} / {{user.maxCharHp}} HP
+        </h3>
         <p>
-            {{ user.playerName }}
+            Jogador: {{ user.playerName }}
         </p>
+        <p>
+            Iniciativa:&nbsp;{{ user.attributes.initiative }}
+        </p>
+        <p>
+            Esquiva: &nbsp;{{ user.attributes.acrobatics }}
+        </p>
+        <p>
+            Contra ataque: &nbsp;{{ user.attributes.fight }}
+        </p>
+        <h3>
+            História
+        </h3>
+        <div class="scrollable-div">
+            <p>
+                {{user.charHistory}}
+            </p>
+        </div>
+        <div class="notes">
+            <h3>
+                Anotações
+            </h3>
+        </div>
     </div>
     <div class="middle-div">
         <h3>
-            {{ user.charName }}
+            DES&nbsp;&nbsp;{{ user.attributes.dex }}
         </h3>
-        <p>
-            {{ user.playerName }}
-        </p>
+        <h3>
+            FOR&nbsp;&nbsp;{{ user.attributes.str }}
+        </h3>
+        <h3>
+            INT&nbsp;&nbsp;{{ user.attributes.int }}
+        </h3>
+        <h3>
+            PRE&nbsp;&nbsp;{{ user.attributes.pre }}
+        </h3>
+        <h3>
+            VIG&nbsp;&nbsp;{{ user.attributes.vig }}
+        </h3>
     </div>
     <div class="right-div">
         <h3>
-            {{ user.charName }}
+            {{user.charClass}}
         </h3>
-        <p>
-            {{ user.playerName }}
-        </p>
+        <h3>
+            Nível {{user.charLevel}}
+        </h3>
+        <h3>
+            {{user.currentCharSanity}} / {{ user.maxCharSanity }} Sanidade
+        </h3>
+        <div class="scrollable-div">
+            <p>
+                Acrobacia: {{ user.attributes.acrobatics }}
+            </p>
+            <p>
+                Adestramento: {{ user.attributes.training }}
+            </p>
+            <p>
+                Artes: {{ user.attributes.arts }}
+            </p>
+            <p>
+                Atletismo: {{ user.attributes.athletics }}
+            </p>
+            <p>
+                Atualidades: {{ user.attributes.currentEvents }}
+            </p>
+            <p>
+                Ciências: {{ user.attributes.sciences }}
+            </p>
+            <p>
+                Constituição: {{ user.attributes.constitution }}
+            </p>
+            <p>
+                Crime: {{ user.attributes.crime }}
+            </p>
+            <p>
+                Diplomacia:  {{ user.attributes.diplomacy }}
+            </p>
+            <p>
+                Enganação: {{ user.attributes.deception }}
+            </p>
+            <p>
+                Furtividade: {{ user.attributes.stealth }}
+            </p>
+            <p>
+                Intimidação: {{ user.attributes.intimidation }}
+            </p>
+            <p>
+                Intuição: {{ user.attributes.intuition }}
+            </p>
+            <p>
+                Investigação: {{ user.attributes.investigation }}
+            </p>
+            <p>
+                Luta: {{ user.attributes.fight }}
+            </p>
+            <p>
+                Medicina: {{ user.attributes.medicine }}
+            </p>
+            <p>
+                Percepção: {{ user.attributes.perception }}
+            </p>
+            <p>
+                Pilotagem: {{ user.attributes.piloting }}
+            </p>
+            <p>
+                Pontaria: {{ user.attributes.aim }}
+            </p>
+            <p>
+                Profissão: {{ user.attributes.profession }}
+            </p>
+            <p>
+                Reflexos: {{ user.attributes.reflexes }}
+            </p>
+            <p>
+                Religião: {{ user.attributes.religion }}
+            </p>
+            <p>
+                Sapiência: {{ user.attributes.sapience }}
+            </p>
+            <p>
+                Sobrevivência: {{ user.attributes.survival }}
+            </p>
+            <p>
+                Tática: {{ user.attributes.tactics }}
+            </p>
+            <p>
+                Tecnologia: {{ user.attributes.technology }}
+            </p>
+            <p>
+                Vontade: {{ user.attributes.will }}
+            </p>
+        </div>
     </div>
 </div>
