@@ -27,6 +27,24 @@
         justify-content: center;
         flex: 1;
         max-width: 400px;
+        ::-webkit-scrollbar {
+            width: 12px;  /* Largura da barra vertical */
+            height: 12px; /* Altura da barra horizontal */
+        }
+        
+        ::-webkit-scrollbar-track {
+            background-color: transparent; /* Cor de fundo da trilha */
+            border-radius: 10px;       /* Arredondamento dos cantos da trilha */
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background-color: #888;    /* Cor da barra de rolagem */
+            border-radius: 10px;       /* Arredondamento dos cantos da barra */
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #555;    /* Cor da barra de rolagem ao passar o mouse */
+        }
         h3, p{
             color: #FFF;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -35,6 +53,7 @@
             margin-top: 3px;
         }
         .scrollable-div{
+            max-width: 350px;
             max-height: 450px;      /* Altura fixa */
             overflow: auto;     /* Exibe barras de rolagem se necessário */
             p{
@@ -44,6 +63,7 @@
             }
         }
         .notes{
+            margin-top: 25px;
             height: 200px;
         }
     }
@@ -54,12 +74,48 @@
         justify-content: center;
         flex: 1;
         max-width: 400px;
+        ::-webkit-scrollbar {
+            width: 12px;  /* Largura da barra vertical */
+            height: 12px; /* Altura da barra horizontal */
+        }
+        
+        ::-webkit-scrollbar-track {
+            background-color: transparent; /* Cor de fundo da trilha */
+            border-radius: 10px;       /* Arredondamento dos cantos da trilha */
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background-color: #888;    /* Cor da barra de rolagem */
+            border-radius: 10px;       /* Arredondamento dos cantos da barra */
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #555;    /* Cor da barra de rolagem ao passar o mouse */
+        }
         h3, p{
             color: #FFF;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
             width: 400px;
             text-align: center;
             margin-top: 3px;
+        }
+        .items-div{
+            h3{
+                margin-top: 50px;
+                margin-bottom: 20px;
+            }
+            .table-items {
+                max-height: 300px;
+                max-width: 380px;
+                border-collapse: collapse;
+                overflow-y: auto;
+                display: block; /* Isso permite que a propriedade overflow-y funcione */
+                color: #FFF;
+                th, td {
+                    text-align: center;
+                    padding: 8px 12px;
+                }
+            }
         }
     }
     .right-div{

@@ -21,10 +21,10 @@
             Iniciativa:&nbsp;{{ user.attributes.initiative }}
         </p>
         <p>
-            Esquiva: &nbsp;{{ user.attributes.acrobatics }}
+            Esquiva:&nbsp;{{ user.attributes.acrobatics }}
         </p>
         <p>
-            Contra ataque: &nbsp;{{ user.attributes.fight }}
+            Contra ataque:&nbsp;{{ user.attributes.fight }}
         </p>
         <h3>
             História
@@ -56,6 +56,27 @@
         <h3>
             VIG&nbsp;&nbsp;{{ user.attributes.vig }}
         </h3>
+        <div class="items-div">
+            <h3>Itens:</h3>
+            <table class="table-items">
+                <thead>
+                    <tr>
+                    <th>Nome</th>
+                    <th>Dano</th>
+                    <th>Peso</th>
+                    <th>Qtd</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of items">
+                    <td>{{ item.itemName }}</td>
+                    <td>{{ item.itemDamage }}</td>
+                    <td>{{ item.itemWeight }}</td>
+                    <td>{{ item.ammount }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <div class="right-div">
         <h3>
